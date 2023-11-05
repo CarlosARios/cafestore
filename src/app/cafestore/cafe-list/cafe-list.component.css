@@ -1,0 +1,9 @@
+.first-row th {
+  font-weight: 900; /* Black */
+  background-color: gray;
+}
+
+.centered-table {
+  margin: auto;
+  width: 50%; /* Ajuste este valor para cambiar el tamaño de la tabla */
+}
