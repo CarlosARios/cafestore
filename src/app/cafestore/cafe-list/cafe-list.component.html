@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <table class="table centered-table" >
+  <table class="table centered-table">
     <thead>
       <tr class="first-row">
         <th>ID</th>
@@ -10,12 +10,17 @@
     </thead>
     <tbody>
       <tr *ngFor="let cafe of cafes">
-        <td>{{cafe.id}}</td>
-        <td>{{cafe.nombre}}</td>
-        <td>{{cafe.tipo}}</td>
-        <td>{{cafe.region}}</td>
+        <td>{{ cafe.id }}</td>
+        <td>{{ cafe.nombre }}</td>
+        <td>{{ cafe.tipo }}</td>
+        <td>{{ cafe.region }}</td>
       </tr>
     </tbody>
+    <tfoot>
+
+        <td colspan="12">Total café blends: {{ blendcount }} </td>
+        <tr colspan="12">Total café de Origen: {{ origencount }}</tr>
+      
+    </tfoot>
   </table>
 </div>
-
